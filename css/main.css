@@ -46,3 +46,14 @@ main div ul li{
     text-align: center;
     align-items: center;
 }
+.estilos-Prop{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-top: 1rem;
+    background-color: #DCDDFF;
+}
+.Estilo-form{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-top: 1rem;
+    background-color: #DCDDFF;
+    text-align: center;
+}

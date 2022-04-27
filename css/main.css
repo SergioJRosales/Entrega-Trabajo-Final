@@ -22,6 +22,9 @@ header div nav div ul li:hover{
 }
 .Log-sdesc{
     text-align: center;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 .redes{
     margin: 2rem 0rem 1rem;

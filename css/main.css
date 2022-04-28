@@ -1,62 +1,11 @@
-header{
-    background-color: #DCDDFF;
-    box-shadow: 0rem 0.1rem black;
-}
-header div nav div ul li:hover{
-    background-color: #b8baf8;
-    transform: scale(1.2);
-}
-.fondo-main{
-    font-family: 'Glass Antiqua', cursive;
-    margin-top: 1rem;
-    background-color: #b8baf8;
-    text-align: center;
-    font-size: 1.5rem;
+header {
+  background-color: #DCDDFF; }
+  header ul li {
+    font-family: 'Glass Antiqua';
+    font-size: 20px;
+    box-shadow: 1rem whitesmoke;
+    justify-content: space-around; }
 
-}
-.estilos-p{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    margin-top: 1rem;
-    background-color: #DCDDFF;
-    text-align: center;
-}
-.Log-sdesc{
-    text-align: center;
-    animation-name: pulse;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-.redes{
-    margin: 2rem 0rem 1rem;
-    font-family: 'Glass Antiqua', cursive;
-    font-size: 1.8rem;    
-    text-align: center;
-}
-footer{
-    padding-top: 3rem;
-    text-align: center;
-}
-.estilos-lista{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    margin-top: 1rem;
-    background-color: #DCDDFF;
-    text-align: center;
-}
-main div ul li{
-    list-style: none;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    background-color: #DCDDFF;
-    text-align: center;
-    align-items: center;
-}
-.estilos-Prop{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    margin-top: 1rem;
-    background-color: #DCDDFF;
-}
-.Estilo-form{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    margin-top: 1rem;
-    background-color: #DCDDFF;
-    text-align: center;
-}
+header nav ul li:hoover {
+  transform: scale(1.2rem);
+  background-color: #b8baf8; }

@@ -1,0 +1,26 @@
+// Estilos generales
+// variables
+$color-principal: #AEAFEA;
+$color-fondo: #DCDDFF;
+
+@mixin aline {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+header{
+    background-color: $color-fondo;
+    ul{
+        li{
+            font-family: 'Glass Antiqua';
+            font-size: 20px;
+            box-shadow: 1rem whitesmoke;
+            justify-content: space-around;
+           
+            }
+        }
+}
+header nav ul li:hoover{
+    transform: scale(1.2rem);
+    background-color: #b8baf8;
+}

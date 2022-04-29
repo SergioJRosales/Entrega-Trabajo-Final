@@ -1,11 +1,64 @@
-header {
-  background-color: #DCDDFF; }
+header ul {
+  margin-right: 3rem; }
   header ul li {
     font-family: 'Glass Antiqua';
     font-size: 20px;
     box-shadow: 1rem whitesmoke;
     justify-content: space-around; }
 
-header nav ul li:hoover {
-  transform: scale(1.2rem);
-  background-color: #b8baf8; }
+main {
+  background-color: #bbbcf0; }
+  main div {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Glass Antiqua';
+    font-size: 22px; }
+  main .estilos-p {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-top: 10vh; }
+  main .Log-sdesc {
+    animation: heartbeat 50s infinite delay iteration-count direction fill-mode; }
+  main .redes-txt {
+    background-color: whitesmoke;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: medium;
+    color: #bbbcf0; }
+  main .img-redes {
+    background-color: whitesmoke;
+    align-items: center;
+    justify-items: stretch; }
+
+footer {
+  font-size: small;
+  text-align: right;
+  color: orange; }
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+  header ul {
+    margin-right: 1rem; }
+    header ul li {
+      font-family: 'Glass Antiqua';
+      font-size: 25px;
+      box-shadow: 1rem whitesmoke;
+      justify-content: space-around; }
+  header nav ul li:hover {
+    transform: scale(1.2rem);
+    background-color: #b8baf8; } }
+
+main {
+  background-color: #bbbcf0; }
+  main div {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Glass Antiqua';
+    font-size: 28px;
+    padding: 3rem; }
+  main p {
+    text-align: center; }
+  main .Log-sdesc {
+    background-color: white; }

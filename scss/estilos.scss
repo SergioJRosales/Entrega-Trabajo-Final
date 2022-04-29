@@ -1,26 +1,86 @@
 // Estilos generales
 // variables
-$color-principal: #AEAFEA;
+$color-principal: #bbbcf0;
 $color-fondo: #DCDDFF;
 
-@mixin aline {
+@mixin Titulo{
     text-align: center;
     color: white;
     font-weight: bold;
+    font-size: 22px;
+    font-family: 'Glass Antiqua';
 }
 header{
-    background-color: $color-fondo;
-    ul{
+      ul{
+        margin-right: 3rem;
         li{
             font-family: 'Glass Antiqua';
             font-size: 20px;
             box-shadow: 1rem whitesmoke;
             justify-content: space-around;
-           
             }
         }
 }
-header nav ul li:hoover{
-    transform: scale(1.2rem);
-    background-color: #b8baf8;
+
+main{
+    background-color: $color-principal;
+    div{ @include Titulo;
+        font-size: 22px;
+    }
+    .estilos-p{
+        font-family: 'Alegreya Sans SC', sans-serif;
+        padding-top: 10vh;
+    }
+    .Log-sdesc{
+        animation: heartbeat 50s infinite delay iteration-count direction fill-mode;
+    }
+    .redes-txt{
+        background-color: whitesmoke;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: medium;
+        color: #bbbcf0;
+    }
+    .img-redes{
+        background-color: whitesmoke;
+        align-items: center;
+        justify-items: stretch;
+    }
+    }
+    footer{
+        font-size: small;
+        text-align: right;
+        color: orange;
+    }
+/*Media Query*/
+@media only screen and (min-width:600px)
+{
+    header{
+        ul{
+          margin-right: 1rem;
+          li{
+              font-family: 'Glass Antiqua';
+              font-size: 25px;
+              box-shadow: 1rem whitesmoke;
+              justify-content: space-around;
+              }
+          }
+        }
+    header nav ul li:hover{
+            transform: scale(1.2rem);
+            background-color: #b8baf8;
+  }
 }
+main{
+    background-color: $color-principal;
+    div{ @include Titulo;
+        font-size: 28px;
+        padding: 3rem;
+
+    }
+    p{
+       text-align: center;
+        }
+    .Log-sdesc{
+        background-color: white;
+    }
+    }

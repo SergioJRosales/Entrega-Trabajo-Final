@@ -2,6 +2,7 @@ header div nav div ul {
   margin-right: 3rem; }
   header div nav div ul li {
     font-family: 'Glass Antiqua';
+    color: #bbbcf0;
     font-size: 20px;
     box-shadow: 1rem whitesmoke;
     justify-content: space-around; }
@@ -42,7 +43,7 @@ main {
     background-color: whitesmoke;
     align-items: center;
     justify-items: auto; }
-  main main div .estilos-lista {
+  main .estilos-lista {
     font-family: 'Alegreya Sans SC', sans-serif;
     color: black;
     text-align: center;
@@ -66,7 +67,9 @@ footer {
       background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: 05 2%;
-      transition: background-size 0.3s; } }
+      transition: background-size 0.3s; }
+  header ul li:hover {
+    transform: scale(1.2rem); } }
 
 main {
   background-color: #bbbcf0; }
@@ -81,17 +84,27 @@ main {
   main .Log-sdesc {
     background-color: white; }
   main .Log-sdesc:hover {
-    animation: shakeX 10s; }
+    animation: shakeX 15s; }
+  main .redes-txt {
+    max-width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: large;
+    color: #bbbcf0; }
+  main .img-redes {
+    max-width: 100%;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-items: auto; }
+  main .estilos-lista {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    text-align: center;
+    list-style: none;
+    font-size: 28px; }
 
 footer {
   size: 100%;
   font-size: large;
   text-align: center;
   color: #bbbcf0; }
-
-.estilos-lista {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  color: black;
-  text-align: center;
-  list-style: none;
-  list-style-type: none; }

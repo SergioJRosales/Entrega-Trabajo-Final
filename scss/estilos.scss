@@ -24,6 +24,7 @@ header{
                     margin-right: 3rem;
                 li{
                     font-family: 'Glass Antiqua';
+                    color:#bbbcf0;
                     font-size: 20px;
                     box-shadow: 1rem whitesmoke;
                     justify-content:space-around;
@@ -70,13 +71,11 @@ main{
         align-items: center;
         justify-items: auto;
     }
-    main div{
         .estilos-lista{
             @include Parrafos;
             list-style: none;
     }
-    }
-
+    
 }
     footer{
         size: 100%;
@@ -102,6 +101,10 @@ main{
                 }
                }
             }
+            header ul li:hover{
+                transform: scale(1.2rem);
+
+            }
 }
 
 
@@ -115,9 +118,28 @@ main{
         background-color: white;
     }
     .Log-sdesc:hover{
-        animation: shakeX 10s;
+        animation: shakeX 15s;
     }
-   
+    .redes-txt{
+        max-width: 100%;
+        background-color: whitesmoke;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: large;
+        color: #bbbcf0;
+    }
+    .img-redes{
+        max-width: 100%;
+        background-color: whitesmoke;
+        align-items: center;
+        justify-items: auto;
+    }
+    .estilos-lista{
+        @include Parrafos;
+         list-style: none;
+         font-size: 28px;
+         
+
+         }
 }
 footer{
     size: 100%;
@@ -125,9 +147,5 @@ footer{
     text-align: center;
     color: #bbbcf0;
 }
-.estilos-lista{
-        @include Parrafos;
-         list-style: none;
-         list-style-type: none;
-}
+
 

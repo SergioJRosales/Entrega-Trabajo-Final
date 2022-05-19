@@ -1,0 +1,209 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 860px;
+}
+//Variables
+$color-principal: #bbbcf0;
+$color-fondo: #DCDDFF;
+
+@mixin Titulo{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Glass Antiqua';
+}
+@mixin Parrafos{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto
+    ;
+}
+
+
+header{
+    
+    div{
+        nav{
+            
+            div{
+              ul{
+                border-radius: 3px;
+                color: black;
+                display: inline-block;
+                margin: 0 20px;
+                li{    
+                    text-transform: uppercase;                
+                    font-family: 'Glass Antiqua';
+                    color:#bbbcf0;
+                    font-size: 20px;
+                    box-shadow: 1rem whitesmoke;
+                    justify-content:space-around;
+                    display: inline-block;
+                    margin: 0 20px;                  
+                }
+            }
+        }
+}
+}
+}
+
+main{
+    
+    background-color: $color-principal;
+    div{ @include Titulo;
+        font-size: 18px;
+        max-width: 80%
+    }
+    .estilos-p{
+        @include Parrafos;
+        max-width: 60%;
+        height: fit-content;
+        padding: 0% 25%;
+
+                }
+    .Log-sdesc{
+        animation-duration: infinite;
+    }
+    .redes-txt{
+        max-width: 100%;
+        background-color: whitesmoke;
+        text-align: center;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: large;
+        color: #bbbcf0;
+    }
+        .estilos-lista{
+            @include Parrafos;
+            list-style: none;
+    }
+    .img-redes{
+        display: block;
+        padding: 2rem;
+        background-color: whitesmoke;
+        margin: 0 auto;
+    }
+    .redes{
+        width: 120px;
+        height: 120px;
+         }
+    
+}
+    footer{
+        size: 100%;
+        font-size: medium;
+        text-align: right;
+        color: #bbbcf0;
+    }
+
+/*Media Query*/
+@media only screen and (min-width:780px)
+{
+    header{
+        
+        ul{
+            padding: 0 auto;
+            margin: 0 6rem;
+            
+         li{
+          font-family: 'Glass Antiqua';
+          font-size: 30px;
+          box-shadow: 1rem $color-principal;
+          justify-content: space-around;
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 05 2%;
+          transition: background-size 0.3s;
+            }
+           }
+        }
+          ul{
+            .nav-item{
+                position: relative;
+                display: inline-block;
+                width: 160px;
+                border-radius: 20px;
+                text-transform: uppercase;
+                background-color: transparent;
+                text-align: center;
+                font-size: 18px;                
+                border: 4px solid $color-principal;
+                font-weight: 700;
+                cursor: pointer;
+                z-index: 0;
+            }
+            .nav-item::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                background-color: $color-principal;
+                transition: all 500ms ease;
+                z-index: -1;
+              }
+              .nav-item::before {
+                width: 0;
+                height: 100%;
+              }
+              .nav-item:hover {
+                color: #bbbcf0;
+              }
+              .nav-item:hover::before {
+                width: 100%;
+              }
+
+        }
+}
+
+main{
+    background-color: $color-principal;
+    div{ @include Titulo;
+        font-size: 40px;
+        padding: 3rem;
+    }
+    .estilos-p{
+        font-size: larger;
+    }
+    .Log-sdesc{
+        background-color: white;
+    }
+    .Log-sdesc:hover{
+        animation: shakeX 15s;
+    }
+    .redes-txt{
+        max-width: 100%;
+        background-color: whitesmoke;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: large;
+        color: #bbbcf0;
+    }
+    .img-redes{
+        max-width: 100%;
+        background-color: whitesmoke;
+        align-items: center;
+        justify-items: auto;
+    }
+
+    .estilos-lista{
+        max-width: 100%;
+        background-color: $color-principal;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: large;
+        color: black;
+        text-align: center ;
+        
+}
+footer{
+    text-align: center;
+    max-width: 98.7%;
+    background-color: $color-principal;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white;
+    
+}
+}

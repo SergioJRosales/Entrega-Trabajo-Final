@@ -1,6 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 860px; }
+
+header div nav div ul {
+  border-radius: 3px;
+  color: black;
+  display: inline-block;
+  margin: 0 20px; }
+  header div nav div ul li {
+    text-transform: uppercase;
+    font-family: 'Glass Antiqua';
+    color: #bbbcf0;
+    font-size: 20px;
+    box-shadow: 1rem whitesmoke;
+    justify-content: space-around;
+    display: inline-block;
+    margin: 0 20px; }
+
+main {
+  background-color: #bbbcf0; }
+  main div {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Glass Antiqua';
+    font-size: 18px;
+    max-width: 80%; }
+  main .estilos-p {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+    height: fit-content;
+    padding: 0% 25%; }
+  main .Log-sdesc {
+    animation-duration: infinite; }
+  main .redes-txt {
+    max-width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: large;
+    color: #bbbcf0; }
+  main .estilos-lista {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    list-style: none; }
+  main .img-redes {
+    display: block;
+    padding: 2rem;
+    background-color: whitesmoke;
+    margin: 0 auto; }
+  main .redes {
+    width: 120px;
+    height: 120px; }
+
+footer {
+  size: 100%;
+  font-size: medium;
+  text-align: right;
+  color: #bbbcf0; }
+
+/*Media Query*/
+@media only screen and (min-width: 780px) {
+  header ul {
+    padding: 0 auto;
+    margin: 0 6rem; }
+    header ul li {
+      font-family: 'Glass Antiqua';
+      font-size: 30px;
+      box-shadow: 1rem #bbbcf0;
+      justify-content: space-around;
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 05 2%;
+      transition: background-size 0.3s; }
+  ul .nav-item {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    border: 4px solid #bbbcf0;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 0; }
+  ul .nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #bbbcf0;
+    transition: all 500ms ease;
+    z-index: -1; }
+  ul .nav-item::before {
+    width: 0;
+    height: 100%; }
+  ul .nav-item:hover {
+    color: #bbbcf0; }
+  ul .nav-item:hover::before {
+    width: 100%; } }
+
+main {
+  background-color: #bbbcf0; }
+  main div {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Glass Antiqua';
+    font-size: 40px;
+    padding: 3rem; }
+  main .estilos-p {
+    font-size: larger; }
+  main .Log-sdesc {
+    background-color: white; }
+  main .Log-sdesc:hover {
+    animation: shakeX 15s; }
+  main .redes-txt {
+    max-width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: large;
+    color: #bbbcf0; }
+  main .img-redes {
+    max-width: 100%;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-items: auto; }
+  main .estilos-lista {
+    max-width: 100%;
+    background-color: #bbbcf0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: large;
+    color: black;
+    text-align: center; }
+  main footer {
+    text-align: center;
+    max-width: 98.7%;
+    background-color: #bbbcf0;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 header div nav div ul {
   margin-right: 3rem; }
   header div nav div ul li {
+    text-transform: uppercase;
+    font-family: 'Glass Antiqua';
+    color: #bbbcf0;
+    font-size: 20px;
+    box-shadow: 1rem whitesmoke;
+    justify-content: space-around; }
+    header div nav div ul li .nav-item {
+      padding: 0px 12px;
+      border-radius: 3px; }
+    header div nav div ul li .nav-item:hover {
+      background-color: #DCDDFF;
+      transition: 0.5s; }
+
+main .f-Perfil {
+  border-radius: 150px;
+  border: solid 2px #150564; }
+
+main .estilos-lista {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+  text-align: center; }
+
+main .txt-Maria {
+  margin: 2rem; }
+
+main .img-redes {
+  display: flex;
+  padding-left: 2rem;
+  background-color: whitesmoke; }
+
+main .redes {
+  width: 120px;
+  height: 120px; }
+
+main footer {
+  size: 100%;
+  font-size: medium;
+  text-align: left;
+  color: #bbbcf0; }
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; }
+    * header ul {
+      margin-right: 1rem; }
+      * header ul li {
+        font-family: 'Glass Antiqua';
+        font-size: 25px;
+        box-shadow: 1rem #bbbcf0;
+        justify-content: space-around;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 05 2%;
+        transition: background-size 0.3s; }
+    * header ul li:hover {
+      transform: scale(1.2rem); }
+  section .redes-- {
+    max-width: 80%;
+    text-align: center;
+    align-items: center; }
+  section .redes {
+    margin: 0 auto;
+    align-items: center; }
+  footer {
+    text-align: center;
+    max-width: 98.7%;
+    background-color: #bbbcf0;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header div nav div ul {
+  margin-right: 3rem; }
+  header div nav div ul li {
+    text-transform: uppercase;
+    font-family: 'Glass Antiqua';
+    color: #bbbcf0;
+    font-size: 20px;
+    box-shadow: 1rem whitesmoke;
+    justify-content: space-around; }
+    header div nav div ul li .nav-item {
+      padding: 0px 12px;
+      border-radius: 3px; }
+    header div nav div ul li .nav-item:hover {
+      background-color: #DCDDFF;
+      transition: 0.5s; }
+
+main div .titulo-main {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Glass Antiqua';
+  font-size: 22px;
+  max-width: 80%; }
+
+main div .estilos-p {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 60%;
+  height: fit-content;
+  padding: 0% 25%; }
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+  header ul {
+    margin-right: 1rem; }
+    header ul li {
+      font-family: 'Glass Antiqua';
+      font-size: 25px;
+      box-shadow: 1rem #bbbcf0;
+      justify-content: space-around;
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 05 2%;
+      transition: background-size 0.3s; }
+  header ul li:hover {
+    transform: scale(1.2rem); }
+  main {
+    background-color: #bbbcf0; }
+    main div {
+      text-align: center;
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: 22px;
+      font-family: 'Glass Antiqua';
+      font-size: 28px;
+      padding: 3rem; }
+      main div .tit2 {
+        padding: 9rem; }
+    main .Log-sdesc {
+      background-color: white; }
+    main .Log-sdesc:hover {
+      animation: shakeX 15s; }
+    main .redes-txt {
+      max-width: 100%;
+      background-color: whitesmoke;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: large;
+      color: #bbbcf0; }
+    main .img-redes {
+      max-width: 100%;
+      background-color: whitesmoke;
+      align-items: center;
+      justify-items: auto; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header div nav div ul {
+  margin-right: 3rem; }
+  header div nav div ul li {
+    text-transform: uppercase;
     font-family: 'Glass Antiqua';
     color: #bbbcf0;
     font-size: 20px;
@@ -14,46 +337,50 @@ header div nav div ul {
       transition: 0.5s; }
 
 main {
-  background-color: #bbbcf0; }
+  max-width: 100%; }
   main div {
+    text-align: center; }
+    main div .estilos-lista {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      color: black;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center; }
+    main div div {
+      border: 20px black; }
+      main div div .Log-sdesc {
+        animation: infinite; }
+    main div .redes-txt {
+      max-width: 100%;
+      background-color: whitesmoke;
+      text-align: center;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: large;
+      color: #bbbcf0; }
+    main div .estilos-lista {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      color: black;
+      text-align: center;
+      margin: 0 auto;
+      list-style: none; }
+    main div section {
+      max-width: 100%; }
+      main div section .redes-- {
+        max-width: 100%; }
+      main div section .img-redes {
+        display: flex;
+        padding-left: 2rem;
+        background-color: whitesmoke; }
+      main div section .redes {
+        max-width: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 2 0 2 0; }
+  main footer {
+    size: 100%;
+    font-size: medium;
     text-align: center;
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 22px;
-    font-family: 'Glass Antiqua';
-    font-size: 22px;
-    max-width: 80%; }
-  main .estilos-p {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    color: black;
-    text-align: center;
-    max-width: 60%;
-    height: fit-content;
-    padding: 0% 25%; }
-  main .Log-sdesc {
-    animation-duration: infinite; }
-  main .redes-txt {
-    max-width: 100%;
-    background-color: whitesmoke;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: large;
-    color: #bbbcf0; }
-  main .img-redes {
-    max-width: 100%;
-    background-color: whitesmoke;
-    align-items: center;
-    justify-items: auto; }
-  main .estilos-lista {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    color: black;
-    text-align: center;
-    list-style: none; }
-
-footer {
-  size: 100%;
-  font-size: medium;
-  text-align: left;
-  color: #bbbcf0; }
+    color: white; }
 
 /*Media Query*/
 @media only screen and (min-width: 600px) {
@@ -72,39 +399,127 @@ footer {
     transform: scale(1.2rem); } }
 
 main {
-  background-color: #bbbcf0; }
-  main div {
+  text-align: center; }
+  main ul li {
     text-align: center;
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 22px;
-    font-family: 'Glass Antiqua';
-    font-size: 28px;
-    padding: 3rem; }
-  main .Log-sdesc {
-    background-color: white; }
-  main .Log-sdesc:hover {
-    animation: shakeX 15s; }
-  main .redes-txt {
+    align-items: center; }
+  main div {
+    max-width: 100%; }
+    main div .Log-sdesc {
+      max-width: 100%;
+      animation: infinite;
+      background-color: white; }
+  main section .redes-txt {
     max-width: 100%;
     background-color: whitesmoke;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: large;
     color: #bbbcf0; }
-  main .img-redes {
+  main section .img-redes {
     max-width: 100%;
     background-color: whitesmoke;
     align-items: center;
     justify-items: auto; }
-  main .estilos-lista {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    color: black;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header div nav div ul {
+  margin-right: 3rem; }
+  header div nav div ul li {
+    text-transform: uppercase;
+    font-family: 'Glass Antiqua';
+    color: #bbbcf0;
+    font-size: 20px;
+    box-shadow: 1rem whitesmoke;
+    justify-content: space-around; }
+    header div nav div ul li .nav-item {
+      padding: 0px 12px;
+      border-radius: 3px; }
+    header div nav div ul li .nav-item:hover {
+      background-color: #DCDDFF;
+      transition: 0.5s; }
+
+main section .card {
+  background-color: #bbbcf0;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center; }
+
+main section div {
+  font-size: 18px;
+  margin: 2 auto;
+  padding: 0 1rem; }
+  main section div h1 {
+    background-color: #bbbcf0;
+    display: flex;
     text-align: center;
-    list-style: none;
-    font-size: 28px; }
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Glass Antiqua';
+    margin-top: 1rem; }
+
+.log-sdesc {
+  max-width: 500px; }
+
+.img-redes {
+  display: flex;
+  padding-left: 2rem;
+  background-color: whitesmoke; }
+
+.redes {
+  width: 120px;
+  height: 120px; }
 
 footer {
   size: 100%;
-  font-size: large;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   color: #bbbcf0; }
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; }
+    * header ul {
+      margin-right: 1rem; }
+      * header ul li {
+        font-family: 'Glass Antiqua';
+        font-size: 25px;
+        box-shadow: 1rem #bbbcf0;
+        justify-content: space-around;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 05 2%;
+        transition: background-size 0.3s; }
+    * header ul li:hover {
+      transform: scale(1.2rem); }
+  main section .card {
+    background-color: #bbbcf0;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center; }
+  main section div {
+    font-size: 30px;
+    margin: 4 auto;
+    padding: 0 3rem; }
+    main section div h1 {
+      display: flex;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: 'Glass Antiqua';
+      margin-top: 1rem; }
+  footer {
+    text-align: center;
+    max-width: 98.7%;
+    background-color: #bbbcf0;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white; } }

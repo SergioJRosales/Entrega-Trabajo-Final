@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    div{
+        nav{
+            div{
+              ul{
+                    margin-right: 3rem;
+                li{
+                    text-transform: uppercase; 
+                    font-family: 'Glass Antiqua';
+                    color:#bbbcf0;
+                    font-size: 20px;
+                    box-shadow: 1rem whitesmoke;
+                    justify-content:space-around;
+                    .nav-item{
+                        padding: 0px 12px;
+                        border-radius: 3px;
+                    }
+                    .nav-item:hover{
+                        background-color: #DCDDFF;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+}
+}
+}
+
+main{
+    section{
+        .card{
+            background-color: #bbbcf0;
+            margin: 0 auto;
+            width: 100%;
+            align-items: center;
+        }
+        div{
+            font-size: 18px;
+            margin: 2 auto;
+            padding: 0 1rem;
+            h1{
+                background-color: #bbbcf0;
+                display: flex;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Glass Antiqua';
+                margin-top: 1rem;
+                }
+            }
+            }
+
+}
+.log-sdesc{
+    max-width: 500px;
+}
+.img-redes{
+    display: flex;
+    padding-left: 2rem;
+    background-color: whitesmoke;
+    }
+.redes{
+    width: 120px;
+    height: 120px;
+    }
+
+footer{
+    size: 100%;
+    font-size: 18px;
+    text-align: left;
+    color: #bbbcf0;
+    }
+
+/*Media Query*/
+@media only screen and (min-width:600px)
+{
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+    header{
+
+            ul{
+            margin-right: 1rem;
+             li{
+              font-family: 'Glass Antiqua';
+              font-size: 25px;
+              box-shadow: 1rem $color-principal;
+              justify-content: space-around;
+              background-position: 0% 100%;
+              background-repeat: no-repeat;
+              background-size: 05 2%;
+              transition: background-size 0.3s;
+                }
+               }
+            }
+            header ul li:hover{
+                transform: scale(1.2rem);
+
+            }
+}
+main{
+    section{
+        .card{
+            background-color: #bbbcf0;
+            margin: 0 auto;
+            width: 100%;
+            align-items: center;
+        }
+        div{
+            font-size: 30px;
+            margin: 4 auto;
+            padding: 0 3rem;
+            h1{
+                display: flex;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                font-family: 'Glass Antiqua';
+                margin-top: 1rem;
+                }
+            }
+            }
+
+}
+footer{
+    text-align: center;
+    max-width: 98.7%;
+    background-color: $color-principal;
+    text-decoration: solid;
+    font-weight: bold;
+    color: white;
+}
+}

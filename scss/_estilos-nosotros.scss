@@ -1,0 +1,133 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+//Variables
+$color-principal: #bbbcf0;
+$color-fondo: #DCDDFF;
+
+@mixin Titulo{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Glass Antiqua';
+}
+@mixin Parrafos{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+
+header{
+    
+    div{
+        nav{
+            div{
+              ul{
+                    margin-right: 3rem;
+                li{
+                    text-transform: uppercase; 
+                    font-family: 'Glass Antiqua';
+                    color:#bbbcf0;
+                    font-size: 20px;
+                    box-shadow: 1rem whitesmoke;
+                    justify-content:space-around;
+                    .nav-item{
+                        padding: 0px 12px;
+                        border-radius: 3px;
+                    }
+                    .nav-item:hover{
+                        background-color: #DCDDFF;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+}
+}
+}
+
+main{
+.f-Perfil{
+    border-radius: 150px;
+    border: solid 2px rgb(21, 5, 100);
+    }
+.estilos-lista{
+    @include Parrafos;
+
+    }
+    .txt-Maria{
+        margin: 2rem;
+        
+    }
+.img-redes{
+    display: flex;
+    padding-left: 2rem;
+    background-color: whitesmoke;
+    }
+.redes{
+    width: 120px;
+    height: 120px;
+    }
+
+footer{
+    size: 100%;
+    font-size: medium;
+    text-align: left;
+    color: #bbbcf0;
+    }
+}
+/*Media Query*/
+@media only screen and (min-width:600px)
+{
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+    header{
+
+            ul{
+            margin-right: 1rem;
+             li{
+              font-family: 'Glass Antiqua';
+              font-size: 25px;
+              box-shadow: 1rem $color-principal;
+              justify-content: space-around;
+              background-position: 0% 100%;
+              background-repeat: no-repeat;
+              background-size: 05 2%;
+              transition: background-size 0.3s;
+                }
+               }
+            }
+            header ul li:hover{
+                transform: scale(1.2rem);
+
+            }
+}
+section{
+   .redes--{
+       max-width: 80%;
+    text-align: center;
+    align-items: center;
+   }
+   .redes{
+      margin: 0 auto;
+      align-items: center;
+   }
+}
+footer{
+        text-align: center;
+        max-width: 98.7%;
+        background-color: $color-principal;
+        text-decoration: solid;
+        font-weight: bold;
+        color: white;
+}
+}
+

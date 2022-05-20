@@ -35,16 +35,17 @@ header{
 
 main{
     section{
+            max-width: 100%;
         .card{
             background-color: #bbbcf0;
             margin: 0 auto;
-            width: 100%;
+            max-width: 100%;
             align-items: center;
         }
         div{
-            font-size: 18px;
+            font-size: 20px;
             margin: 2 auto;
-            padding: 0 1rem;
+            padding: 0 4rem;
             h1{
                 background-color: #bbbcf0;
                 display: flex;
@@ -55,10 +56,13 @@ main{
                 font-family: 'Glass Antiqua';
                 margin-top: 1rem;
                 }
+            
+            }
+            
             }
             }
 
-}
+
 .log-sdesc{
     max-width: 500px;
 }
@@ -110,6 +114,7 @@ footer{
 }
 main{
     section{
+        
         .card{
             background-color: #bbbcf0;
             margin: 0 auto;
@@ -117,9 +122,11 @@ main{
             align-items: center;
         }
         div{
+            max-width: 100%;
             font-size: 30px;
             margin: 4 auto;
             padding: 0 3rem;
+        
             h1{
                 display: flex;
                 text-align: center;
@@ -129,8 +136,10 @@ main{
                 font-family: 'Glass Antiqua';
                 margin-top: 1rem;
                 }
+            
+            }    
             }
-            }
+            
 
 }
 footer{

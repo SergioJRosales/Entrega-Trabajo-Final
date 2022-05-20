@@ -5,7 +5,6 @@
   max-width: 860px; }
 
 header div nav div ul {
-  border-radius: 3px;
   color: black;
   display: inline-block;
   margin: 0 20px; }
@@ -74,41 +73,36 @@ footer {
     header ul li {
       font-family: 'Glass Antiqua';
       font-size: 30px;
-      box-shadow: 1rem #bbbcf0;
       justify-content: space-around;
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
       background-size: 05 2%;
       transition: background-size 0.3s; }
   ul .nav-item {
     position: relative;
     display: inline-block;
     width: 160px;
-    border-radius: 20px;
     text-transform: uppercase;
     background-color: transparent;
     text-align: center;
     font-size: 18px;
-    border: 4px solid #bbbcf0;
     font-weight: 700;
     cursor: pointer;
     z-index: 0; }
-  ul .nav-item::before {
+  ul .nav-item:after {
     content: "";
     position: absolute;
-    left: 0;
     right: 0;
-    top: 0;
-    background-color: #bbbcf0;
-    transition: all 500ms ease;
-    z-index: -1; }
-  ul .nav-item::before {
-    width: 0;
-    height: 100%; }
-  ul .nav-item:hover {
-    color: #bbbcf0; }
-  ul .nav-item:hover::before {
-    width: 100%; } }
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: dodgerblue;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out; }
+  ul .nav-item:hover:after {
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1); } }
 
 main {
   background-color: #bbbcf0; }
@@ -339,17 +333,17 @@ header div nav div ul {
 main {
   max-width: 100%; }
   main div {
-    text-align: center; }
+    text-align: center;
+    border: 20px black; }
     main div .estilos-lista {
       font-family: 'Alegreya Sans SC', sans-serif;
       color: black;
       text-align: center;
       margin: 0 auto;
-      align-items: center; }
-    main div div {
-      border: 20px black; }
-      main div div .Log-sdesc {
-        animation: infinite; }
+      text-align: center;
+      margin: 0 auto; }
+    main div .Log-sdesc {
+      animation: infinite; }
     main div .redes-txt {
       max-width: 100%;
       background-color: whitesmoke;
@@ -398,28 +392,31 @@ main {
   header ul li:hover {
     transform: scale(1.2rem); } }
 
-main {
-  text-align: center; }
-  main ul li {
-    text-align: center;
-    align-items: center; }
-  main div {
-    max-width: 100%; }
-    main div .Log-sdesc {
-      max-width: 100%;
-      animation: infinite;
-      background-color: white; }
-  main section .redes-txt {
+main div {
+  text-align: center;
+  margin: 0 auto; }
+  main div ul {
+    margin: 0 auto; }
+    main div ul li {
+      text-align: center;
+      align-items: center; }
+  main div .Log-sdesc {
     max-width: 100%;
-    background-color: whitesmoke;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: large;
-    color: #bbbcf0; }
-  main section .img-redes {
-    max-width: 100%;
-    background-color: whitesmoke;
-    align-items: center;
-    justify-items: auto; }
+    animation: infinite;
+    background-color: white; }
+
+main section .redes-txt {
+  max-width: 100%;
+  background-color: whitesmoke;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: large;
+  color: #bbbcf0; }
+
+main section .img-redes {
+  max-width: 100%;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-items: auto; }
 
 * {
   padding: 0;
@@ -442,25 +439,26 @@ header div nav div ul {
       background-color: #DCDDFF;
       transition: 0.5s; }
 
-main section .card {
-  background-color: #bbbcf0;
-  margin: 0 auto;
-  width: 100%;
-  align-items: center; }
-
-main section div {
-  font-size: 18px;
-  margin: 2 auto;
-  padding: 0 1rem; }
-  main section div h1 {
+main section {
+  max-width: 100%; }
+  main section .card {
     background-color: #bbbcf0;
-    display: flex;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+    margin: 0 auto;
+    max-width: 100%;
+    align-items: center; }
+  main section div {
     font-size: 20px;
-    font-family: 'Glass Antiqua';
-    margin-top: 1rem; }
+    margin: 2 auto;
+    padding: 0 4rem; }
+    main section div h1 {
+      background-color: #bbbcf0;
+      display: flex;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: 'Glass Antiqua';
+      margin-top: 1rem; }
 
 .log-sdesc {
   max-width: 500px; }
@@ -505,6 +503,7 @@ footer {
     width: 100%;
     align-items: center; }
   main section div {
+    max-width: 100%;
     font-size: 30px;
     margin: 4 auto;
     padding: 0 3rem; }
